@@ -5,7 +5,6 @@ from django.db import models
 class Proveedor(models.Model):
     codigo = models.IntegerField()
     nombre = models.CharField(max_length=50)
-    productos = models.ManyToManyField("Producto")
 
     def __str__(self):
         return self.nombre
@@ -29,8 +28,6 @@ class Producto(models.Model):
     def __str__(self):
         return self.descripcion
 
-    def esta_pedido(self):
-        return True
 
 
 
