@@ -9,7 +9,7 @@ class ProductoAdmin(admin.ModelAdmin):
 	    ("Codigo", {"fields": ["codigo"]}),
 		("Descripcion", {"fields": ["descripcion"]}),
     ]
-    list_display = ("codigo", "descripcion", "esta_pedido")
+    list_display = ("codigo", "descripcion")
     list_per_page = 700
 
 	
